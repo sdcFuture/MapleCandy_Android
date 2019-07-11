@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "22579039184",
+    "firebase_url": "https://futuremaplecandy.firebaseio.com",
+    "project_id": "futuremaplecandy",
+    "storage_bucket": "futuremaplecandy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22579039184:android:c651b5c6bbb36fa1",
+        "android_client_info": {
+          "package_name": "com.futureelectronics.futuremaplecandy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22579039184-1ggi6v9mjf3b8tuh8nm3fkm531vmul28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.futureelectronics.futuremaplecandy",
+            "certificate_hash": "95dd6e5e6c33c973c3db5f94362835182f879543"
+          }
+        },
+        {
+          "client_id": "22579039184-n1qbomn5jgctlp8tkk4aa1l07jlct6bs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBT82r2S1Iu-gj_vYb31G1KxVAPBhz0ps"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22579039184-n1qbomn5jgctlp8tkk4aa1l07jlct6bs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

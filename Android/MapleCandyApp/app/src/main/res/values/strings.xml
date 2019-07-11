@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Maple Candy</string>
+    <string name="action_settings">Settings</string>
+    <string name="device_signal_strength">RSSI</string>
+    <string name="lbl_device_signal_strength">RSSI:</string>
+    <string name="device_signal_strength_unit">dBm</string>
+    <string name="device_no_name">[No Name]</string>
+
+    <string name="dia_title_need_location">This app needs coarse location access</string>
+    <string name="dia_msg_need_location">Please grant coarse location access so this app can properly scan for BLE devices.</string>
+
+    <string name="dummy_device_name">MapleCandy0000</string>
+    <string name="dummy_device_address">00:00:00:00:00:00</string>
+    <string name="dummy_device_rssi">-50</string>
+    <string name="dummy_adc_val">0.000</string>
+
+    <string name="title_activity_connected">ConnectedActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_adc">Measure</string>
+
+    <string name="device_cannot_connect">Cannot connect to the device</string>
+    <string name="msg_err_device_disconnected">Disconnected from device!</string>
+    <string name="alert_connecting_title">Device Connection</string>
+    <string name="alert_connecting_msg">Connecting to device</string>
+    <string name="alert_connected_discovering_msg">Connected and discovering services from device</string>
+
+    <string name="gauge_volts">Volts</string>
+    <string name="gauge_mamps">mA</string>
+
+    <string name="lbl_adc_ch0">0:</string>
+    <string name="lbl_adc_ch1">1:</string>
+    <string name="lbl_adc_ch2">2:</string>
+
+    <string name="msg_not_valid_device">Not a valid Maple Candy device!</string>
+
+    <string name="msg_connecting_device">Connecting to %1$s. Please wait.</string>
+    <string name="adc_view">ADC View</string>
+
+    <string name="label_channel_0">Channel 0</string>
+    <string name="label_channel_1">Channel 1</string>
+    <string name="label_channel_2">Channel 2</string>
+    <string name="label_dac_0">DAC 0</string>
+    <string name="label_dac_1">DAC 1</string>
+    <string name="version">V 1.0.0</string>
+</resources>

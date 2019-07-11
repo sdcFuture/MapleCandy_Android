@@ -1,0 +1,11 @@
+Keystore password
+FutureSDC
+Key Alias: key_maple_candy
+Password
+SDCdepartment
+First and Las Name: Manuel Valle
+Organizational Unit: SDC
+Organization: Future Electronics
+City or Locality: Montreal
+State Province: Quebec
+Countro Code (XX): 1

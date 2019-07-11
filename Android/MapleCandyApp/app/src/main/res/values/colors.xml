@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#3bac5b</color>-->
+    <color name="colorPrimary">#00AB67</color>
+    <color name="colorPrimaryDark">#008349</color>
+    <!--<color name="colorPrimaryDark">#418f00</color>-->
+    <!--<color name="colorPrimaryDark">#398000</color>-->
+    <color name="colorAccent">#39A9DB</color>
+
+    <color name="colorCardSensorValue">#3F51B5</color>
+    <!--<color name="colorCardSensorValue">#c8737373</color>-->
+    <color name="colorHighSpeed">#EA0C01</color>
+    <color name="colorCold">#39A9DB</color>
+    <color name="colorHot">#EA0C01</color>
+
+    <color name="colorSensorText">@android:color/white</color>
+</resources>

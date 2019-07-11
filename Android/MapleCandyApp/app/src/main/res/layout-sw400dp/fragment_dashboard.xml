@@ -1,0 +1,260 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futureelectronics.futuremaplecandy.DashboardFragment">
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#f5f5f5">-->
+
+    <com.github.anastr.speedviewlib.PointerSpeedometer
+        android:id="@+id/rpm_gauge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/rpm_gauge_margin"
+        android:layout_marginTop="@dimen/rpm_gauge_margin"
+        android:layout_marginEnd="@dimen/rpm_gauge_margin"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:sv_backgroundCircleColor="@android:color/transparent"
+        app:sv_centerCircleColor="@color/colorPrimaryDark"
+        app:sv_highSpeedColor="@color/colorHighSpeed"
+        app:sv_indicatorColor="@color/colorPrimaryDark"
+        app:sv_lowSpeedPercent="50"
+        app:sv_markColor="@color/colorPrimary"
+        app:sv_maxSpeed="100"
+        app:sv_mediumSpeedPercent="75"
+        app:sv_minSpeed="0"
+        app:sv_pointerColor="@color/colorPrimaryDark"
+        app:sv_speedTextColor="@color/colorPrimary"
+        app:sv_speedTextSize="0dp"
+        app:sv_speedometerColor="@color/colorPrimary"
+        app:sv_textColor="@color/colorPrimary"
+        app:sv_textSize="20dp"
+        app:sv_tickNumber="10"
+        app:sv_unit="@string/gauge_volts"
+        app:sv_unitTextColor="@color/colorPrimary"
+        app:sv_unitTextSize="20dp"
+        app:sv_withTremble="false"
+        tools:sv_unit="@string/gauge_volts" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_accel"
+        android:layout_width="82dp"
+        android:layout_height="118dp"
+        app:cardCornerRadius="@dimen/sensor_card_corner"
+        app:cardElevation="@dimen/sensor_card_elevation"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/sensor_card_padding"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_amblight"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cv_amblight"
+        app:layout_constraintTop_toTopOf="@+id/cv_amblight"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_adc"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_adc_titles"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/lbl_adc_ch0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_accel_x"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_adc_val"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/lbl_adc_ch1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_accel_y"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_adc_val"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/lbl_adc_ch2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_accel_z"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_adc_val"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_amblight"
+        android:layout_width="111dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="@dimen/sensor_card_corner"
+        app:cardElevation="@dimen/sensor_card_elevation"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/sensor_card_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cv_accel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpm_gauge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adc_view"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_adcs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radioButton_channel0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/label_channel_0"
+                    android:textSize="12sp"
+                    app:buttonTint="@color/colorPrimaryDark" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radioButton_channel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_channel_1"
+                    android:textSize="12sp"
+                    app:buttonTint="@color/colorPrimaryDark" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radioButton_channel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_channel_2"
+                    android:textSize="12sp"
+                    app:buttonTint="@color/colorPrimaryDark" />
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="100dp"
+        android:layout_height="118dp"
+        app:cardCornerRadius="@dimen/sensor_card_corner"
+        app:cardElevation="@dimen/sensor_card_elevation"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/sensor_card_padding"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_accel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cv_accel"
+        app:layout_constraintTop_toTopOf="@+id/cv_accel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_dac0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/future_button"
+                android:fadingEdgeLength="2dp"
+                android:padding="3dp"
+                android:requiresFadingEdge="horizontal|vertical"
+                android:text="@string/label_dac_0"
+                android:textColor="@color/cardview_light_background" />
+
+            <Button
+                android:id="@+id/button_dac1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/future_button"
+                android:fadingEdgeLength="2dp"
+                android:padding="3dp"
+                android:requiresFadingEdge="horizontal|vertical"
+                android:text="@string/label_dac_1"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/version"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
